@@ -1,0 +1,3 @@
+[submodule "bxcan-filters"]
+	path = bxcan-filters
+	url = git@github.com:Error-101/bxcan-filters.git

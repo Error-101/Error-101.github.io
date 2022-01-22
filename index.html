@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="UTF-8" />
+  <title>Useful Links</title>
+  <style>
+    body {
+      color: #d4d4d4;
+      background-color: #1e1e1e;
+      font-family: var(--vscode-editor-font-family, "SF Mono", Monaco, Menlo, Consolas, "Ubuntu Mono", "Liberation Mono", "DejaVu Sans Mono", "Courier New", monospace);
+      font-size: 1em;
+      line-height: 1.357em;
+    }
+
+    a {
+      color: #569CD6;
+      text-decoration: none;
+    }
+
+    header {
+      margin: 1em 1em .5em;
+      text-transform: uppercase;
+      font-family: "Segoe WPC","Segoe UI",sans-serif;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+    
+    
+    header > p {
+      font-size: .8em;
+      padding-bottom: 1em;
+      border-bottom: 1px solid #d4d4d4
+    }
+    header > a{
+      display: inline-block;
+      color: #d4d4d4;
+      align-content: left;
+      font-size: 2em;
+    }
+    
+    .wrapper > p {
+      margin: 0;
+    }
+
+    ul {
+      list-style-type: ">> ";
+      margin-top:0;
+    }
+
+    .wrapper {
+      margin: 0 1em;
+    }
+
+    .container {
+      display: inline-block;
+    }
+
+    .prompt {
+      animation: fadein .5s;
+    }
+
+    @keyframes fadein {
+        from { opacity: 0; }
+        to   { opacity: 1; }
+    }
+
+    @keyframes wait {
+      0% { opacity: 0; }
+      100% { opacity: 0; }
+    }
+    
+    .typed-out {
+      display: inline-block;
+      vertical-align: bottom;
+      animation-delay: 1s;
+      overflow: hidden;
+      border-right: .15em solid orange;
+      animation: 
+        typing 1s steps(17, end) forwards,
+        cursor .1s 1.3s forwards;
+      white-space: nowrap;
+      width: 0;
+    }
+    
+  
+    @keyframes typing {
+      from { width: 0; }
+      to { width: 100%; }
+    }
+
+    @keyframes cursor {
+      from { border-right: initial }
+      to { border-right: none }
+    }
+
+
+    .output, ul{
+      margin-block-start: .5em;
+      margin-block-end: .5em;
+    }
+  </style>
+  <script src="https://kit.fontawesome.com/3c7178b1c3.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+  <header>
+    <p>Terminal</p>
+    <a href="https://github.com/Error-101/error-101.github.io"><i class="fab fa-github"></i></a>
+  </header>
+  <div class="wrapper">
+    <span class="prompt"><span style="color:#23C887;font-weight:bold">user@Error-101.github.io</span>:<span
+    style="color: #3A8CE8">~</span> $ </span>
+    <span class="container"><span class="typed-out">./Useful_Links.sh</span></span>
+    <div class="output">
+      <p>
+        <span class="prompt" style="animation: wait 1.5s, fadein .5s 1.5s;">> Hello World!</span>
+        <br />
+        <span class="prompt" style="animation: wait 2.5s, fadein .5s 2.5s;">> Select the destination you desire</span>
+        <ul id="arrow">
+          <li style="animation: wait 3.5s, fadein .5s 3.5s";><a href="bxcan-filters/bxCAN Filters.html">bxCAN Filters</a></li>
+        </ul>
+      </p>
+    </div>
+  </div>
+
+</body>
+<!--  -->
+</html>
